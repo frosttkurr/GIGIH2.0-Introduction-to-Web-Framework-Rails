@@ -1,0 +1,17 @@
+Item.all
+exit
+.show
+Item.all
+CategoryItem.all
+exit
+Item.all
+CategoryItem..all
+CategoryItem.all
+Item.all
+CategoryItem.all
+Item.all
+Item.find_by(id: 5)
+Item.category_id = 1
+Item.all
+ls
+exit

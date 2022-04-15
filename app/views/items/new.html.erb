@@ -1,0 +1,7 @@
+<h3>Create an Item</h3>
+<%= form_with model: @item do |form| %>
+  <%= form.text_field :name, placeholder: "Name" %>
+  <%= form.text_field :price, placeholder: "Price" %>
+  <%= form.select :category_id, @categories.map { |t| [t.name, t.id]} %>
+  <%= form.submit %>
+<% end %>

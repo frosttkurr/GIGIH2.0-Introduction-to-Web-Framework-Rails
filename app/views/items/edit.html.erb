@@ -1,0 +1,7 @@
+<h3>Edit <%= @item.name %></h3>
+<%= form_with model: @item do |form| %>
+  <%= form.text_field :name, placeholder: "Name", value: @item.name %>
+  <%= form.text_field :price, placeholder: "Price", value: @item.price %>
+  <%= form.select :category_id, @categories.map { |t| [t.name, t.id]}, :selected => @item.category_id %>
+  <%= form.submit %>
+<% end %>
